@@ -25,6 +25,18 @@ header h1 {
   letter-spacing: 2px;
   margin: 0;
 }
+header .subtext {
+  font-size: 1.5em;
+  color: darkgreen;
+  text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
 
 /* Main Content Area - Fluid Layout */
 .content {
@@ -127,4 +139,5 @@ footer h2 {
     padding: 0 10px;
   }
 }
+
 
