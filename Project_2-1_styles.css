@@ -1,11 +1,9 @@
-/* Overall Page Setup */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(to top, #4b2e05, #b5651d);
 }
 
-/* Header Section */
 header {
   background-color: black;
   text-align: center;
@@ -38,7 +36,6 @@ header .subtext {
   margin-top: 10px;
 }
 
-/* Main Content Area - Fluid Layout */
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +44,6 @@ header .subtext {
   margin: 20px 5%;
 }
 
-/* Image Section */
 .image-box {
   flex: 1 1 45%;
   border: 1px solid black;
@@ -61,7 +57,6 @@ header .subtext {
   height: auto;
 }
 
-/* Info Section */
 .info-box {
   flex: 1 1 45%;
   border: 1px solid black;
@@ -71,7 +66,6 @@ header .subtext {
   margin: 10px;
 }
 
-/* Buttons Section */
 .button-container {
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +91,6 @@ header .subtext {
   background-color: #0b5c0b;
 }
 
-/* Footer Section */
 footer {
   background-color: black;
   text-align: center;
@@ -119,7 +112,6 @@ footer h2 {
   margin: 0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2.5em;
@@ -139,5 +131,6 @@ footer h2 {
     padding: 0 10px;
   }
 }
+
 
 
