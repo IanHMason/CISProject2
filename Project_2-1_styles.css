@@ -109,16 +109,23 @@ footer h2 {
      2px  2px 0 black;
 }
 
-.contact-flex { align-items: flex-start; }
+.contact-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
 
 .form-box {
   flex: 1 1 420px;
-  min-width: 320px;
+  max-width: 500px;
   border: 3px solid black;
   border-radius: 12px;
   background: white;
   color: black;
   padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .form-box h2 {
