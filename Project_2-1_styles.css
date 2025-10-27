@@ -190,8 +190,6 @@ footer h2 {
 
 .btn-reset:hover { transform: translateY(-2px); background: #0a0a0a; }
 
-/* ==== CAROUSEL SECTION ==== */
-
 .carousel {
   position: relative;
   max-width: 600px;
@@ -240,7 +238,7 @@ footer h2 {
   transform: translateY(-50%);
   font-size: 2rem;
   color: #00ff00;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
   border: none;
   cursor: pointer;
   padding: 8px 14px;
@@ -251,13 +249,11 @@ footer h2 {
 }
 
 .arrow:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0,0,0,0.8);
 }
 
 .arrow.left { left: 10px; }
 .arrow.right { right: 10px; }
-
-/* ==== END CAROUSEL SECTION ==== */
 
 @media (max-width: 900px) {
   header h1 { font-size: 3.2em; }
