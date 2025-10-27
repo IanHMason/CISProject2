@@ -17,23 +17,23 @@
         <div class="carousel">
           <div class="slide active">
             <img src="images/pass-the-bass-Karl-Alvarez-The-Descendents-Dylan-Flynn.jpg" alt="Dylan with Karl Alvarez of the Descendents">
-            <div class="caption">Dylan with Karl Alvarez of the Descendents</div>
+            <p class="caption">Dylan with Karl Alvarez of the Descendents</p>
           </div>
           <div class="slide">
             <img src="images/pass-the-bass-dylan-flynn-bassist.jpg" alt="Dylan Flynn of Pass the Bass">
-            <div class="caption">Dylan Flynn of Pass the Bass</div>
+            <p class="caption">Dylan Flynn of Pass the Bass</p>
           </div>
           <div class="slide">
             <img src="images/pass-the-bass-dylan-nofx-band-640x480.jpg" alt="Dylan with NOFX">
-            <div class="caption">Dylan with NOFX</div>
+            <p class="caption">Dylan with NOFX</p>
           </div>
           <div class="slide">
             <img src="images/pass-the-bass-dylan-randy-bradbury-pennywise-640x480.jpg" alt="Randy Bradbury of Pennywise with Dylan's bass">
-            <div class="caption">Randy Bradbury of Pennywise with Dylan's bass</div>
+            <p class="caption">Randy Bradbury of Pennywise with Dylan's bass</p>
           </div>
           <div class="slide">
             <img src="images/Big-thanks-to-fender-pass-the-bass.jpg" alt="Thanks to Fender!">
-            <div class="caption">Thanks to Fender!</div>
+            <p class="caption">Thanks to Fender!</p>
           </div>
 
           <button class="arrow left">&#10094;</button>
@@ -66,7 +66,7 @@
   </footer>
 
   <script>
-    const slides = document.querySelectorAll('.carousel .slide');
+    const slides = document.querySelectorAll('.slide');
     const prev = document.querySelector('.arrow.left');
     const next = document.querySelector('.arrow.right');
     let index = 0;
@@ -85,6 +85,8 @@
       index = (index + 1) % slides.length;
       showSlide(index);
     });
+
+    showSlide(index);
   </script>
 </body>
 </html>
