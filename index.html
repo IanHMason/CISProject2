@@ -14,13 +14,27 @@
       border: 3px solid #00ff00;
       border-radius: 12px;
     }
-    .carousel img {
-      width: 100%;
+    .carousel .slide {
       display: none;
+      text-align: center;
     }
-    .carousel img.active {
+    .carousel .slide.active {
       display: block;
       animation: fade 0.7s ease-in-out;
+    }
+    .carousel img {
+      width: 100%;
+      height: auto;
+      border-bottom: 3px solid #00ff00;
+    }
+    .caption {
+      color: #00ff00;
+      background: rgba(0, 0, 0, 0.85);
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 10px;
+      border-top: 3px solid #00ff00;
+      margin: 0;
     }
     @keyframes fade {
       from { opacity: 0.4; }
@@ -56,11 +70,26 @@
     <section class="content">
       <div class="image-box">
         <div class="carousel">
-          <img src="pass-the-bass-Karl-Alvarez-The-Descendents-Dylan-Flynn.jpg" class="active" alt="Pass the Bass Event 1">
-          <img src="pass-the-bass-dylan-flynn-bassist.jpg" alt="Pass the Bass Event 2">
-          <img src="pass-the-bass-dylan-nofx-band-640x480.jpg" alt="Pass the Bass Event 3">
-          <img src="pass-the-bass-dylan-randy-bradbury-pennywise-640x480.jpg" alt="Pass the Bass Event 4">
-          <img src="Big-thanks-to-fender-pass-the-bass.jpg" alt="Pass the Bass Event 5">
+          <div class="slide active">
+            <img src="pass-the-bass-Karl-Alvarez-The-Descendents-Dylan-Flynn.jpg" alt="Dylan with Karl Alvarez of the Descendents">
+            <p class="caption">Dylan with Karl Alvarez of the Descendents</p>
+          </div>
+          <div class="slide">
+            <img src="pass-the-bass-dylan-flynn-bassist.jpg" alt="Dylan Flynn of Pass the Bass">
+            <p class="caption">Dylan Flynn of Pass the Bass</p>
+          </div>
+          <div class="slide">
+            <img src="pass-the-bass-dylan-nofx-band-640x480.jpg" alt="Dylan with NOFX">
+            <p class="caption">Dylan with NOFX</p>
+          </div>
+          <div class="slide">
+            <img src="pass-the-bass-dylan-randy-bradbury-pennywise-640x480.jpg" alt="Randy Bradbury of Pennywise with Dylan's bass">
+            <p class="caption">Randy Bradbury of Pennywise with Dylan's bass</p>
+          </div>
+          <div class="slide">
+            <img src="Big-thanks-to-fender-pass-the-bass.jpg" alt="Thanks to Fender!">
+            <p class="caption">Thanks to Fender!</p>
+          </div>
           <button class="arrow left">&#10094;</button>
           <button class="arrow right">&#10095;</button>
         </div>
@@ -91,13 +120,13 @@
   </footer>
 
   <script>
-    const slides = document.querySelectorAll('.carousel img');
+    const slides = document.querySelectorAll('.slide');
     const prev = document.querySelector('.arrow.left');
     const next = document.querySelector('.arrow.right');
     let index = 0;
 
     function showSlide(i) {
-      slides.forEach(slide => slide.classList.remove('active'));
+      slides.forEach(s => s.classList.remove('active'));
       slides[i].classList.add('active');
     }
 
@@ -110,9 +139,12 @@
       index = (index + 1) % slides.length;
       showSlide(index);
     });
+
+    showSlide(index);
   </script>
 </body>
 </html>
+
 
 
 
