@@ -167,7 +167,7 @@ footer h2 {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
@@ -223,7 +223,6 @@ footer h2 {
     flex: 0 0 90%;
   }
 }
-
 
 
 
