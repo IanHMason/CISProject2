@@ -66,12 +66,12 @@ main { padding: 20px; }
   justify-content: center;
 }
 
-.btn {
+main .btn {
   display: inline-block;
   text-decoration: none;
-  color: #00ff00;
-  background: black;
-  border: 3px solid #00ff00;
+  color: #00ff00 !important;
+  background: black !important;
+  border: 3px solid #00ff00 !important;
   border-radius: 12px;
   padding: 12px 18px;
   font-weight: bold;
@@ -80,7 +80,10 @@ main { padding: 20px; }
   transition: transform .15s ease, background .15s ease;
 }
 
-.btn:hover { transform: translateY(-2px); background: #0a0a0a; }
+main .btn:hover {
+  transform: translateY(-2px);
+  background: #0a0a0a !important;
+}
 
 footer {
   background: black;
@@ -101,7 +104,6 @@ footer h2 {
      2px  2px 0 black;
 }
 
-/* Carousel */
 .carousel {
   position: relative;
   max-width: 600px;
@@ -165,7 +167,6 @@ footer h2 {
 .arrow.left { left: 10px; }
 .arrow.right { right: 10px; }
 
-/* Contact Page */
 .contact-flex {
   display: flex;
   flex-wrap: wrap;
@@ -255,7 +256,6 @@ footer h2 {
 
 .btn-reset:hover { transform: translateY(-2px); background: #0a0a0a; }
 
-/* Picture Gallery */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -310,9 +310,73 @@ footer h2 {
      2px  2px 0 black;
 }
 
+.custom-accordion .accordion-button {
+  background-color: black;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  font-weight: bold;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: #0a0a0a;
+  color: #00ff00;
+}
+
+.custom-accordion .accordion-body {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #e8e8e8;
+  border: 2px solid #00ff00;
+  border-top: none;
+}
+
+.custom-accordion .accordion-item {
+  border: none;
+  margin-bottom: 10px;
+}
+
+.custom-card-group {
+  gap: 20px;
+}
+
+.custom-card {
+  background-color: black;
+  color: #e8e8e8;
+  border: 3px solid #00ff00;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  transition: transform 0.2s ease, border-color 0.3s ease;
+}
+
+.custom-card:hover {
+  border-color: #39ff14;
+  transform: scale(1.03);
+}
+
+.custom-card .card-img-top {
+  height: 320px;
+  object-fit: cover;
+  border-bottom: 3px solid #00ff00;
+}
+
+.custom-card .card-title {
+  color: #00ff00;
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.custom-card .text-muted {
+  color: #b0b0b0 !important;
+}
+
 @media (max-width: 700px) {
   .gallery-item { flex: 0 0 90%; }
 }
+
 
 
 
