@@ -354,8 +354,9 @@ footer h2 {
 }
 
 .custom-card .card-img-top {
-  height: 320px;
-  object-fit: cover;
+  height: 400px;
+  object-fit: contain;
+  background-color: black;
   border-bottom: 3px solid #00ff00;
 }
 
@@ -376,6 +377,17 @@ footer h2 {
 @media (max-width: 700px) {
   .gallery-item { flex: 0 0 90%; }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
