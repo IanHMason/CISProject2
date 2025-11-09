@@ -428,6 +428,14 @@ footer h2 {
   .gallery-item { flex: 0 0 90%; }
 }
 
+.float-image {
+  float: left;
+  width: 40%;
+  max-width: 300px;
+  margin: 0 20px 10px 0;
+  border: 3px solid #00ff00;
+  border-radius: 10px;
+}
 
 
 
